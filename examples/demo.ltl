@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_port_scanner
+
+import std::io
+use ltl_port_scanner as lib
+
+fn main() {
+    io::println("ltl_port_scanner demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
